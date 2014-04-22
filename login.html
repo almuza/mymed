@@ -1,0 +1,79 @@
+<!DOCTYPE html >
+<html >
+<head>
+ <meta charset="UTF-8">
+ <title>login</title>
+  <link href="CSS3MediaQuery1.css" rel="stylesheet" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+  <style>  
+  @media all and (orientation: portrait) {
+  #img1, #img2 {
+   float: left;
+   width:100%;
+   height:auto;	}  }
+
+@media all and (orientation: landscape) {
+ #img1, #img2 {
+   float: left;
+   width:100%;
+   height:auto;  }  }
+
+#one1{width:100px; height:100px; background-color:#0FC;float:left;}
+#two2{width:100px; height:100px; background-color:#06F;float:left;}
+#four4{width:100px; height:100px;background-color:#6C3;float:left;}
+#three3{width:100px; height:100px;background-color:#906;float:left;}
+#home{background-image:url(pic/Capture6.GIF); 
+ background-repeat:repeat;}
+ #head1{background-image:url(pic/Capture5.GIF); 
+ background-repeat:repeat;}
+ #disclosure{height:100px; width:500px;background-color:#FFF;float:left;}
+   </style>     
+</head>
+<body>
+<div data-role="page" id="home" data-theme="c" data-add-back-btn="true">
+     <header data-role="header" id="head1">
+         <h1>My Med Sheet</h1>
+    </header>
+ <div data-role="content">
+<div class="choice_list"> 
+<h2> Login </h2>
+ <div data-role="div1" id="disclosure"><br />
+         Username_________________<br /><br />
+         Password_________________<br /> <br /> 
+              
+</div><br />
+ <form>
+     <label for="password-1">Password: data-clear-btn="false"</label>
+     <input data-clear-btn="false" name="password-1" id="password-1" value="" autocomplete="off" type="password">
+     <label for="password-2">Password: data-clear-btn="true"</label>
+     <input data-clear-btn="true" name="password-2" id="password-2" value="" autocomplete="off" type="password">
+</form>
+</div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+
+    <div class="ui-block-a">
+    <a href="main.HTML" data-transition="slidedown">
+    <input value="Enter" type="button" > </a>
+    </div>
+  
+</div>
+ <div class="ui-grid-b">
+    <div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:60px">Advertise1</div></div>
+    <div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:60px">Block B</div></div>
+    <div class="ui-block-c"><div class="ui-bar ui-bar-a" style="height:60px">Block C</div></div>
+</div><!-- /grid-b -->
+    <footer data-role="footer" data-position="fixed">
+    <nav data-role="navbar">
+            <ul>
+            <li><a href="home" data-icon="home">Home</a></li>
+            <li><a href="Photos" data-icon="grid">E-mail</a></li>
+            <li><a href="Info" data-icon="info">About</a></li>
+          </ul>
+    </nav>
+   </footer> </div><!-- /page -->
+
+</body>
+</html>

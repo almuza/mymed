@@ -1,0 +1,64 @@
+<!DOCTYPE html >
+
+<html >
+<head>
+  <title>index</title>
+  <link href="CSS3MediaQuery1.css" rel="stylesheet" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+    
+    <link rel="stylesheet" href="jquery.mobile.structure-1.0.1.CSS" />
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+        <meta charset="utf-8" />
+  <style>
+  @media all and (orientation: portrait) {
+  #img1, #img2 {
+   float: left;
+   width:100%;
+   height:auto;	}  }
+
+@media all and (orientation: landscape) {
+ #img1, #img2 {
+   float: left;
+   width:100%;
+   height:auto;  }  }
+
+#one1{width:100px; height:100px; background-color:#0FC;float:left;}
+#two2{width:100px; height:100px; background-color:#06F;float:left;}
+#four4{width:100px; height:100px;background-color:#6C3;float:left;}
+#three3{width:100px; height:100px;background-color:#906;float:left;}
+#home{background-image:url(pic/Capture6.GIF); 
+ background-repeat:repeat;}
+ #head1{background-image:url(pic/Capture5.GIF); 
+ background-repeat:repeat;}
+ .ui-grid-b{background-color:#FFC; }
+   </style>     
+</head>
+<body>
+<div data-role="page" id="home" data-theme="c" data-add-back-btn="true">
+     <header data-role="header" id="head1"  >
+        <h1>My Med Sheet</h1>
+    </header>
+   <div data-role="content">
+	<div class="choice_list"> 
+<h2> What would you'd like to do? </h2>
+ <ul data-role="listview" data-inset="true" >
+ <li><a href="manage.HTML" data-transition="slidedown"> <img id="img1" alt="Smiley face" src="pic/Capture2.GIF"/> <h3> Manage My Med</h3></a></li>
+ <li><a href="view.HTML" data-transition="slidedown"> <img id="img2" alt="Smiley face" src="pic/Capture2.GIF"/> <h3> View My Med </h3></a></li>
+ </ul></div><br /><br /><br /><br /></div> <br /><br /><br /><br /><br /><br /><br /><br /><br />
+<div class="ui-grid-b">
+    <div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:60px">Advertise1</div></div>
+    <div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:60px">Block B</div></div>
+    <div class="ui-block-c"><div class="ui-bar ui-bar-a" style="height:60px">Block C</div></div>
+</div><!-- /grid-b -->
+    <footer data-role="footer" data-position="fixed">
+    <nav data-role="navbar">
+            <ul>
+            <li><a href="home" data-icon="home">Home</a></li>
+            <li><a href="Photos" data-icon="grid"> About</a></li>
+            <li><a href="Info" data-icon="info">Contact</a></li>
+          </ul>
+    </nav>   </footer></div><!-- /page -->
+</body>
+</html>
